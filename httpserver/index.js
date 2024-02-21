@@ -24,22 +24,26 @@ const http=require('http');
 let server=http.createServer((req,res)=>{
     // console.log(req.url);
     if(req.url==='/'){
-        req.end("home");
+
+        res.end("home");
 }
     else if(req.url==='/about'){
-req.end("jsdjsdjs");
+res.end("jsdjsdjs");
 
     }
     else{
         res.writeHead(404,{'content-type':"text/html"})
-req.end('error');
+res.end('error');
     }
 }
 )
 
 // /create server ka use kor serve.ja likta pari
 
+// 8000,"127.0.0.1", ata holo hery port
+
 server.listen(8000,"127.0.0.1",()=>{
     console.log('ankur is makaut');
 })
 
+// servr.listen two arg 1.port(8000,"127.0.0.1"),2.callback

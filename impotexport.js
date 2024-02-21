@@ -1,4 +1,8 @@
 
+// ae topic common .js bola hoi
+
+
+
 // more then 1 using multiline export
 // let add=(a,b)=>{
 //     return a+b;
